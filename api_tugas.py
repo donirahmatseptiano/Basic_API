@@ -2,7 +2,7 @@ from flask import Flask, json, request, flash, url_for, redirect, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
 
-DB_URI = "postgresql+psycopg2://postgres:111290gartek@localhost:5432/tugas"
+DB_URI = "postgresql+psycopg2://username:password@hostname:port/db_name"
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = DB_URI
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
